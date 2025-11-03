@@ -1,5 +1,5 @@
 CHARCOAL_ID = "M15"
-TARGET = "Poaceae"
+TARGET = "Ambrosia"
 
 PROCESSED_DATA_PATH = "tmp/data_processed.csv"
 
