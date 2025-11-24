@@ -1,5 +1,5 @@
 CHARCOAL_ID = "M15"
-TARGET = "Ambrosia"
+TARGET = "Synth_3"
 
 PROCESSED_DATA_PATH = "tmp/data_processed.csv"
 
@@ -24,8 +24,8 @@ DISCARD_POLLEN = ['Abies',
                   "Spore trilete",
                   "Sarcobatus"]
 
-DISCRETIZATION_TRESHOLDS = [-0.01,0.01]
+DISCRETIZATION_TRESHOLDS = [0]
 
-MIN_SUPPORT = 5
+MIN_SUPPORT = 1
 
 DEBUG = True
