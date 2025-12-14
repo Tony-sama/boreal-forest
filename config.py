@@ -4,6 +4,7 @@ MIN_INFLUENCE_SUPPORT = 10
 CHARCOAL_ID = "M15"
 
 PROCESSED_DATA_PATH = "tmp/data_processed.csv"
+DISCRETE_DATA_PATH = "tmp/data_discrete.csv"
 
 
 POACEAE_FEATURES = ['M15',
@@ -55,7 +56,8 @@ FEATURES = ['M15',
 
 FEATURES = POACEAE_FEATURES
 
-TARGETS = FEATURES
+TARGETS = [c+"_change" for c in FEATURES]
+#TARGETS = ["Synth_0_change"]
 
 DISCARD_POLLEN = ['Abies',
                   "Tsuga",
@@ -82,4 +84,7 @@ DISCRETIZATION_TRESHOLDS = [0]
 
 MIN_SUPPORT = 1
 
-DEBUG = False
+DEBUG = True
+
+MIN_UP = 0.1
+MIN_DOWN = -0.1
